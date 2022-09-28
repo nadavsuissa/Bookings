@@ -1,10 +1,10 @@
 package main
 
 import (
-	"FirstGoWeb/pkg/config"
-	"FirstGoWeb/pkg/handlers"
 	"github.com/go-chi/chi/v5"
 	"github.com/go-chi/chi/v5/middleware"
+	"github.com/nadavsuissa/Bookings/pkg/config"
+	"github.com/nadavsuissa/Bookings/pkg/handlers"
 	"net/http"
 )
 
@@ -21,6 +21,9 @@ func routes(app *config.AppConfig) http.Handler {
 		"/about",
 		handlers.Repo.About,
 	)
+
+	fileServer := http.FileServer(http.Dir("./static/"))
+	mux.Handle("/static/*", http.StripPrefix("/static", fileServer))
 
 	return mux
 }

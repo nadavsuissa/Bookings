@@ -1,9 +1,9 @@
 package handlers
 
 import (
-	"FirstGoWeb/pkg/config"
-	"FirstGoWeb/pkg/models"
-	"FirstGoWeb/pkg/render"
+	"github.com/nadavsuissa/Bookings/pkg/config"
+	"github.com/nadavsuissa/Bookings/pkg/models"
+	"github.com/nadavsuissa/Bookings/pkg/render"
 	"net/http"
 )
 

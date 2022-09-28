@@ -1,11 +1,11 @@
 package main
 
 import (
-	"FirstGoWeb/pkg/config"
-	"FirstGoWeb/pkg/handlers"
-	"FirstGoWeb/pkg/render"
 	"fmt"
 	"github.com/alexedwards/scs/v2"
+	"github.com/nadavsuissa/Bookings/pkg/config"
+	"github.com/nadavsuissa/Bookings/pkg/handlers"
+	"github.com/nadavsuissa/Bookings/pkg/render"
 	"log"
 	"net/http"
 	"time"

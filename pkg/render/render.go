@@ -1,10 +1,10 @@
 package render
 
 import (
-	"FirstGoWeb/pkg/config"
-	"FirstGoWeb/pkg/models"
 	"bytes"
 	"fmt"
+	"github.com/nadavsuissa/Bookings/pkg/config"
+	"github.com/nadavsuissa/Bookings/pkg/models"
 	"html/template"
 	"log"
 	"net/http"
